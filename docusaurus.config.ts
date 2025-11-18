@@ -17,6 +17,20 @@ const config = {
   organizationName: 'DAP-FS', // Your GitHub username
   projectName: 'Test20', // Your repository name
 
+  const config = {
+  title: 'ML Course',
+  tagline: 'Learn Machine Learning',
+  favicon: 'img/favicon.ico',
+
+  // IMPORTANT: These must match exactly
+  url: 'https://dap-fs.github.io',
+  baseUrl: '/Test20/',  // Must have leading and trailing slashes
+
+  organizationName: 'DAP-FS',
+  projectName: 'Test20',
+  
+  trailingSlash: false,  // Add this line
+
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
@@ -32,6 +46,9 @@ const config = {
         docs: {
           sidebarPath: './sidebars.js',
         },
+        blog: {
+          showReadingTime: true,
+        },
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -40,7 +57,7 @@ const config = {
   ],
 
   themeConfig: {
-    // ... your theme config
+    // your theme config
   },
 };
 
